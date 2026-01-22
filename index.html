@@ -3,35 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMPANY NAME</title>
+    <title>Company Name</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        COMPANY NAME
-    </header>
-    <img src="/assets/logo.png" class="logo">
-    <h2>Mission Statement:</h2>
-    <p>
-        insert mission statement here
-    </p>
-</body>
 
-<style>
+    <header class="header">
+        <div class="container">
+            <div class="branding">
+                <div class="logo">CNA</div>
+                <h1 class="company-name">Company Name</h1>
+            </div>
+            <p class="mission-statement">
+                insert mission statement here
+            </p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                company description goes here
+            </p>
+
+            <h3>Our Services</h3>
+            <ul class="services-list">
+                <li>Service One – do code things</li>
+                <li>Service Two – ensure code things do good things</li>
+                <li>Service Three – fix the code things that dont work</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section alt-background">
+        <div class="container">
+            <h2>Our Team Members</h2>
+
+        <div class="team-grid">
+            <div class="team-member">
+                <h4>Corbin Brooks</h4>
+                <p>Front-End Specialist</p>
+                <p class="bio">
+                    description goes here
+                </p>
+            </div>
+
+            <div class="team-member">
+                <h4>Blade Sexton</h4>
+                <p>Front-End Specialist</p>
+                <p class="bio">
+                    description goes here
+                </p>
+            </div>
+
+            <div class="team-member">
+                <h4>Nicholas Gaudon</h4>
+                <p>Data/Back-End Specialist</p>
+                <p class="bio">
+                    description goes here
+                </p>
+            </div>
+
+            <div class="team-member">
+                <h4>Liam O'Neill</h4>
+                <p>Data/Back-End Specialist</p>
+                <p class="bio">
+                    description goes here
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 *INSERT COMPANY NAME HERE*</p>
+        </div>
+    </footer>
+
+
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     body {
-        background: #383838;
-        color:white;
-        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
     }
-    header {
-        text-align: center;
-        font-size: 36px;
+
+    html, body {
+        height: 100%;
     }
-    .logo {
-        width: 150px;
-        height: auto;
-        display: block;
+
+    .container {
+        width: 90%;
+        max-width: 1100px;
         margin: 0 auto;
-        padding-top: 36px;
     }
-</style>
+
+    .header {
+        background-color: #1f2933;
+        color: #ffffff;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .branding {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+        background-color: #4f46e5;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .company-name {
+        font-size: 2rem;
+    }
+
+    .mission-statement {
+        font-size: 1.1rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .section h2 {
+        margin-bottom: 15px;
+        font-size: 1.8rem;
+    }
+
+    .section h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .section p {
+        margin-bottom: 10px;
+    }
+
+    .alt-background {
+        background-color: #f3f4f6;
+    }
+
+    .services-list {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .team-member {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .team-member h4 {
+        margin-bottom: 5px;
+    }
+
+    .bio {
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    .footer {
+        margin-top: auto;
+        background-color: #1f2933;
+        color: #ffffff;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 0.9rem;
+    }
+    </style>
+</body>
 </html>
