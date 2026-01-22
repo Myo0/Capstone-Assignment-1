@@ -1,0 +1,20 @@
+{
+  "name": "capstone-assignment-1",
+  "version": "1.0.0",
+  "description": "Capstone Assignment 1: Branding",
+  "homepage": "https://github.com/Myo0/Capstone-Assignment-1#readme",
+  "bugs": {
+    "url": "https://github.com/Myo0/Capstone-Assignment-1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myo0/Capstone-Assignment-1.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  }
+}
